@@ -1,2 +1,2 @@
 # cv-template
-curriculum Vitae HTML &amp; CSS Template
+cv template using html & css only
