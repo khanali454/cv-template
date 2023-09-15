@@ -6,21 +6,19 @@
 }
 
 body{
-    background: #fcfcfc;
+    background: #bb7a55;
 }
 /* cv template */
 .cv-template{
-    width: 1172px;
-    padding: 0 40px;
-    max-width: 1172px;
+    width: 968px;
+    max-width: 968px;
     margin: 0 auto;
-    height: 100vh;
-    background: #eb9c9c;
+    background: #fff;
+    padding: 30px;
 }
 
 
 .cv-section {
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,14 +26,50 @@ body{
 
 .cv-section .personal-info{
 width: calc(100% - 140px);
-height: 170px;
-background: #c5c5c5;
+display: flex;
+flex-direction: column;
+-ms-flex-direction: column;
+justify-content: space-between;
 }
+
+.info{
+    display: flex;
+}
+
+.left-info,.right-info{
+    width: 50%;
+}
+
+.info-detail{
+    display: flex;
+    align-items: flex-start;
+}
+
+.info-detail .key{
+    font-size: 18px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+.info-detail .key span{
+font-weight: normal;
+}
+
+.person-name{
+    padding: 5px 0;
+    font-size: 2rem;
+}
+
 
 
 .profile-container{
     width: 140px;
-    height: 170px;
+    height: 190px;
+    border: 1px solid;
 }
 
 
