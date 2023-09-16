@@ -1,0 +1,529 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "additionalProperties": false,
+    "definitions": {
+        "iso8601": {
+            "type": "string",
+            "description": "Similar to the standard date type, but each section after the year is optional. e.g. 2014-06-29 or 2023-04",
+            "pattern": "^([1-2][0-9]{3}-[0-1][0-9]-[0-3][0-9]|[1-2][0-9]{3}-[0-1][0-9]|[1-2][0-9]{3})$"
+        }
+    },
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "description": "Link to the version of the schema that can validate the CV",
+            "format": "uri"
+        },
+        "basics": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string",
+                    "description": "e.g. Software Engineer"
+                },
+                "image": {
+                    "type": "string",
+                    "description": "URL (as per RFC 3986) to an image in JPEG or PNG format"
+                },
+                "email": {
+                    "type": "string",
+                    "description": "e.g. thomas@gmail.com",
+                    "format": "email"
+                },
+                "phone": {
+                    "type": "string",
+                    "description": "Phone numbers are stored as strings so use any format you like, e.g. 712-117-2923"
+                },
+                "url": {
+                    "type": "string",
+                    "description": "URL (as per RFC 3986) to your website, e.g. personal homepage",
+                    "format": "uri"
+                },
+                "summary": {
+                    "type": "string",
+                    "description": "Write a short 2-3 sentence biography about yourself"
+                },
+                "location": {
+                    "type": "object",
+                    "additionalProperties": true,
+                    "properties": {
+                        "address": {
+                            "type": "string",
+                            "description": "To add multiple address lines, use \n. For example, 1234 Glücklichkeit Straße\nHinterhaus 5. Etage li."
+                        },
+                        "postalCode": {
+                            "type": "string"
+                        },
+                        "city": {
+                            "type": "string"
+                        },
+                        "countryCode": {
+                            "type": "string",
+                            "description": "code as per ISO-3166-1 ALPHA-2, e.g. US, AU, IN"
+                        },
+                        "region": {
+                            "type": "string",
+                            "description": "The general region where you live. Can be a US state, or a province, for instance."
+                        }
+                    }
+                },
+                "profiles": {
+                    "type": "array",
+                    "description": "Specify any number of social networks that you participate in",
+                    "additionalItems": false,
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": true,
+                        "properties": {
+                            "network": {
+                                "type": "string",
+                                "description": "e.g. LinkedIn or Twitter"
+                            },
+                            "username": {
+                                "type": "string",
+                                "description": "e.g. john_doe"
+                            },
+                            "url": {
+                                "type": "string",
+                                "description": "e.g. http://twitter.example.com/john_doe",
+                                "format": "uri"
+                            }
+                        }
+                    }
+                },
+                "age": {
+                    "type": "integer",
+                    "description": "Age of the candidate"
+                },
+                "gender": {
+                    "type": "string",
+                    "description": "Gender of the candidate"
+                },
+                "maritalStatus": {
+                    "type": "string",
+                    "description": "Marital status of the candidate"
+                },
+                "dob": {
+                    "type": "string",
+                    "description": "Date of birth of the candidate"
+                },
+                "linkedinProfile": {
+                    "type": "string",
+                    "description": "URL to the LinkedIn profile of the candidate",
+                    "format": "uri"
+                },
+                "nationality": {
+                    "type": "string",
+                    "description": "Nationality of the candidate"
+                },
+                "nric": {
+                    "type": "string",
+                    "description": "National Registration Identity Card (NRIC) of the candidate"
+                }
+            }
+        },
+        "work": {
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "e.g. Google"
+                    },
+                    "location": {
+                        "type": "string",
+                        "description": "e.g. Mountain View, CA"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "e.g. Search Engine Company"
+                    },
+                    "position": {
+                        "type": "string",
+                        "description": "e.g. Software Engineer"
+                    },
+                    "url": {
+                        "type": "string",
+                        "description": "e.g. http://google.example.com",
+                        "format": "uri"
+                    },
+                    "startDate": {
+                        "$ref": "#/definitions/iso8601"
+                    },
+                    "endDate": {
+                        "$ref": "#/definitions/iso8601"
+                    },
+                    "summary": {
+                        "type": "string",
+                        "description": "Give an overview of your responsibilities at the company"
+                    },
+                    "highlights": {
+                        "type": "array",
+                        "description": "Specify multiple accomplishments",
+                        "additionalItems": false,
+                        "items": {
+                            "type": "string",
+                            "description": "e.g. Improved search algorithm resulting in 20% faster search times"
+                        }
+                    }
+                }
+            }
+        },
+        "volunteer": {
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                    "organization": {
+                        "type": "string",
+                        "description": "e.g. Red Cross"
+                    },
+                    "position": {
+                        "type": "string",
+                        "description": "e.g. Volunteer Coordinator"
+                    },
+                    "url": {
+                        "type": "string",
+                        "description": "e.g. http://redcross.example.com",
+                        "format": "uri"
+                    },
+                    "startDate": {
+                        "$ref": "#/definitions/iso8601"
+                    },
+                    "endDate": {
+                        "$ref": "#/definitions/iso8601"
+                    },
+                    "summary": {
+                        "type": "string",
+                        "description": "Give an overview of your responsibilities at the organization"
+                    },
+                    "highlights": {
+                        "type": "array",
+                        "description": "Specify accomplishments and achievements",
+                        "additionalItems": false,
+                        "items": {
+                            "type": "string",
+                            "description": "e.g. Coordinated relief efforts during natural disasters"
+                        }
+                    }
+                }
+            }
+        },
+        "education": {
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                    "institution": {
+                        "type": "string",
+                        "description": "e.g. Stanford University"
+                    },
+                    "url": {
+                        "type": "string",
+                        "description": "e.g. http://stanford.example.com",
+                        "format": "uri"
+                    },
+                    "area": {
+                        "type": "string",
+                        "description": "e.g. Computer Science"
+                    },
+                    "studyType": {
+                        "type": "string",
+                        "description": "e.g. Bachelor of Science"
+                    },
+                    "startDate": {
+                        "$ref": "#/definitions/iso8601"
+                    },
+                    "endDate": {
+                        "$ref": "#/definitions/iso8601"
+                    },
+                    "score": {
+                        "type": "string",
+                        "description": "Grade point average, e.g. 3.9/4.0"
+                    },
+                    "courses": {
+                        "type": "array",
+                        "description": "List notable courses/subjects",
+                        "additionalItems": false,
+                        "items": {
+                            "type": "string",
+                            "description": "e.g. CS101 - Introduction to Computer Science"
+                        }
+                    }
+                }
+            }
+        },
+        "awards": {
+            "type": "array",
+            "description": "Specify any awards you have received throughout your academic and professional career",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "description": "e.g. Dean's List"
+                    },
+                    "date": {
+                        "$ref": "#/definitions/iso8601"
+                    },
+                    "awarder": {
+                        "type": "string",
+                        "description": "e.g. Stanford University"
+                    },
+                    "summary": {
+                        "type": "string",
+                        "description": "e.g. Awarded for outstanding academic performance"
+                    }
+                }
+            }
+        },
+        "certificates": {
+            "type": "array",
+            "description": "Specify any certificates you have received throughout your academic and professional career",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "e.g. AWS Certified Solutions Architect"
+                    },
+                    "date": {
+                        "$ref": "#/definitions/iso8601"
+                    },
+                    "url": {
+                        "type": "string",
+                        "description": "e.g. http://aws.example.com/certification",
+                        "format": "uri"
+                    },
+                    "issuer": {
+                        "type": "string",
+                        "description": "e.g. Amazon Web Services"
+                    }
+                }
+            }
+        },
+        "publications": {
+            "type": "array",
+            "description": "Specify your publications throughout your academic and professional career",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "e.g. Research Paper on Machine Learning"
+                    },
+                    "publisher": {
+                        "type": "string",
+                        "description": "e.g. IEEE, Journal of Machine Learning Research"
+                    },
+                    "releaseDate": {
+                        "$ref": "#/definitions/iso8601"
+                    },
+                    "url": {
+                        "type": "string",
+                        "description": "e.g. http://www.example.com/machine-learning-paper",
+                        "format": "uri"
+                    },
+                    "summary": {
+                        "type": "string",
+                        "description": "Short summary of the publication"
+                    }
+                }
+            }
+        },
+        "skills": {
+            "type": "array",
+            "description": "List out your professional skill-set",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "e.g. Python Programming"
+                    },
+                    "level": {
+                        "type": "string",
+                        "description": "e.g. Expert"
+                    },
+                    "keywords": {
+                        "type": "array",
+                        "description": "List some keywords pertaining to this skill",
+                        "additionalItems": false,
+                        "items": {
+                            "type": "string",
+                            "description": "e.g. Data Analysis"
+                        }
+                    }
+                }
+            }
+        },
+        "languages": {
+            "type": "array",
+            "description": "List any languages you speak",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                    "language": {
+                        "type": "string",
+                        "description": "e.g. English, Spanish"
+                    },
+                    "fluency": {
+                        "type": "string",
+                        "description": "e.g. Fluent, Beginner"
+                    }
+                }
+            }
+        },
+        "interests": {
+            "type": "array",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "e.g. Photography"
+                    },
+                    "keywords": {
+                        "type": "array",
+                        "additionalItems": false,
+                        "items": {
+                            "type": "string",
+                            "description": "e.g. Landscape, Portrait"
+                        }
+                    }
+                }
+            }
+        },
+        "jobPreferences": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "dateOfAvailability": {
+                    "type": "string",
+                    "description": "Date of Availability e.g. 1 month"
+                },
+                "previousSalary": {
+                    "type": "string",
+                    "description": "e.g. 150,000 PKR / Month"
+                },
+                "expectedSalary": {
+                    "type": "string",
+                    "description": "e.g. 200,000 PKR / Month"
+                }
+            }
+        },
+        "references": {
+            "type": "array",
+            "description": "List references you have received",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "e.g. Timothy Cook"
+                    },
+                    "position": {
+                        "type": "string",
+                        "description": "e.g. Senior Manager"
+                    },
+                    "companyAddress": {
+                        "type": "string",
+                        "description": "e.g. 1234 Main Street, Cityville, CA"
+                    },
+                    "officeNumber": {
+                        "type": "string",
+                        "description": "e.g. +1-123-456-7890"
+                    },
+                    "mobileNumber": {
+                        "type": "string",
+                        "description": "e.g. +1-987-654-3210"
+                    }
+                }
+            }
+        },
+        "projects": {
+            "type": "array",
+            "description": "Specify career projects",
+            "additionalItems": false,
+            "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "e.g. Sales Dashboard"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Short summary of project. e.g. Improved sales data visualization."
+                    },
+                    "highlights": {
+                        "type": "array",
+                        "description": "Specify multiple features",
+                        "additionalItems": false,
+                        "items": {
+                            "type": "string",
+                            "description": "e.g. Interactive charts, real-time updates"
+                        }
+                    },
+                    "keywords": {
+                        "type": "array",
+                        "description": "Specify special elements involved",
+                        "additionalItems": false,
+                        "items": {
+                            "type": "string",
+                            "description": "e.g. D3.js, React"
+                        }
+                    }
+                }
+            }
+        },
+        "meta": {
+            "type": "object",
+            "description": "The schema version and any other tooling configuration lives here",
+            "additionalProperties": true,
+            "properties": {
+                "canonical": {
+                    "type": "string",
+                    "description": "URL (as per RFC 3986) to the latest version of this document",
+                    "format": "uri"
+                },
+                "version": {
+                    "type": "string",
+                    "description": "A version field which follows semver - e.g. v1.0.0"
+                },
+                "lastModified": {
+                    "type": "string",
+                    "description": "Using ISO 8601 with YYYY-MM-DDThh:mm:ss"
+                }
+            }
+        }
+    },
+    "title": "CV Schema",
+    "type": "object"
+}
