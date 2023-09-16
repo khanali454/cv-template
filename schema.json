@@ -45,7 +45,7 @@
                 },
                 "summary": {
                     "type": "string",
-                    "description": "Write a short 2-3 sentence biography about yourself"
+                    "description": "Write a short 5-6 sentence biography about yourself"
                 },
                 "location": {
                     "type": "object",
@@ -135,23 +135,23 @@
                 "properties": {
                     "name": {
                         "type": "string",
-                        "description": "e.g. Google"
+                        "description": "Name of the company e.g. Google"
                     },
                     "location": {
                         "type": "string",
-                        "description": "e.g. Mountain View, CA"
+                        "description": "address of the company  e.g. Mountain View, CA"
                     },
                     "description": {
                         "type": "string",
-                        "description": "e.g. Search Engine Company"
+                        "description": "About the company e.g. Search Engine Company"
                     },
                     "position": {
                         "type": "string",
-                        "description": "e.g. Software Engineer"
+                        "description": "candidate position or designation in company e.g. Software Engineer"
                     },
                     "url": {
                         "type": "string",
-                        "description": "e.g. http://google.example.com",
+                        "description": "website of the company e.g. http://google.example.com",
                         "format": "uri"
                     },
                     "startDate": {
@@ -166,7 +166,7 @@
                     },
                     "highlights": {
                         "type": "array",
-                        "description": "Specify multiple accomplishments",
+                        "description": "Specify multiple accomplishments at least 5",
                         "additionalItems": false,
                         "items": {
                             "type": "string",
@@ -227,20 +227,20 @@
                 "properties": {
                     "institution": {
                         "type": "string",
-                        "description": "e.g. Stanford University"
+                        "description": "Name of the institute e.g. Stanford University"
                     },
                     "url": {
                         "type": "string",
-                        "description": "e.g. http://stanford.example.com",
+                        "description": "Official website of the institute e.g. http://stanford.example.com",
                         "format": "uri"
                     },
                     "area": {
                         "type": "string",
-                        "description": "e.g. Computer Science"
+                        "description": "Degree Name e.g. Computer Science"
                     },
                     "studyType": {
                         "type": "string",
-                        "description": "e.g. Bachelor of Science"
+                        "description": "Type of the study e.g. Bachelor of Science"
                     },
                     "startDate": {
                         "$ref": "#/definitions/iso8601"
@@ -250,7 +250,7 @@
                     },
                     "score": {
                         "type": "string",
-                        "description": "Grade point average, e.g. 3.9/4.0"
+                        "description": "Commulative Grade point average, e.g. 3.9/4.0"
                     },
                     "courses": {
                         "type": "array",
@@ -427,17 +427,17 @@
                 },
                 "previousSalary": {
                     "type": "string",
-                    "description": "e.g. 150,000 PKR / Month"
+                    "description": "According to user currency e.g. 3000$ / Month"
                 },
                 "expectedSalary": {
                     "type": "string",
-                    "description": "e.g. 200,000 PKR / Month"
+                    "description": "e.g. 5000$ / Month"
                 }
             }
         },
         "references": {
             "type": "array",
-            "description": "List references you have received",
+            "description": "List of the referees to your work experience",
             "additionalItems": false,
             "items": {
                 "type": "object",
@@ -446,6 +446,10 @@
                     "name": {
                         "type": "string",
                         "description": "e.g. Timothy Cook"
+                    },
+                    "companyName": {
+                        "type": "string",
+                        "description": "Name of the company e.g. google"
                     },
                     "position": {
                         "type": "string",
