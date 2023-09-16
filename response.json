@@ -1,0 +1,133 @@
+{
+    "basics": {
+        "name": "Aqeel Abbas",
+        "label": "Web Developer",
+        "email": "your.email@example.com",
+        "phone": "+1234567890",
+        "summary": "I am a web developer with a BSIT 4-year degree. I have worked at Google and as a freelancer, accumulating almost 10 years of experience as a software engineer and web developer. Currently, I am seeking a new opportunity with an expected salary of 140,000 INR.",
+        "age": 30,
+        "gender": "Male",
+        "dob": "1993-09-16",
+        "maritalStatus": "Single",
+        "linkedinProfile": "https://www.linkedin.com/in/yourlinkedinprofile",
+        "nationality": "Indian",
+        "nric": "123456789",
+        "location": {
+            "address": "123 Street Name",
+            "city": "City Name"
+        }
+    },
+    "awards": [
+        {
+            "title": "Employee of the Month",
+            "summary": "Recognized for outstanding performance and dedication to excellence at Google."
+        }
+    ],
+    "skills": [
+        {
+            "name": "HTML",
+            "level": "Expert"
+        },
+        {
+            "name": "CSS",
+            "level": "Expert"
+        },
+        {
+            "name": "JavaScript",
+            "level": "Expert"
+        },
+        {
+            "name": "Python",
+            "level": "Intermediate"
+        },
+        {
+            "name": "PHP",
+            "level": "Intermediate"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Cook Booking Website (LookMyCook)",
+            "url": "https://www.lookmycook.com",
+            "description": "A web platform for users to discover and book cooking classes with professional chefs."
+        }
+    ],
+    "work": [
+        {
+            "name": "Google",
+            "location": "Mountain View, CA",
+            "position": "Software Engineer",
+            "startDate": "2010-06-01",
+            "endDate": "2015-06-01",
+            "highlights": [
+                "Developed front-end features for Google Search.",
+                "Collaborated with cross-functional teams to optimize website performance.",
+                "Implemented user interface enhancements for various Google products."
+            ],
+            "summary": "Worked as a Software Engineer at Google, focusing on front-end development and performance optimization."
+        },
+        {
+            "name": "Freelancer",
+            "location": "Remote",
+            "position": "Web Developer",
+            "startDate": "2015-07-01",
+            "endDate": "2020-07-01",
+            "highlights": [
+                "Designed and developed custom websites for clients in various industries.",
+                "Collaborated with clients to define project requirements and deliverables.",
+                "Implemented responsive design to ensure compatibility across devices."
+            ],
+            "summary": "Worked as a freelance web developer, specializing in custom website design and development."
+        }
+    ],
+    "education": [
+        {
+            "institution": "University Name",
+            "studyType": "Bachelor of Science in Information Technology",
+            "area": "Information Technology",
+            "startDate": "2007-09-01",
+            "endDate": "2011-06-01",
+            "score": "3.8/4.0"
+        }
+    ],
+    "languages": [
+        {
+            "language": "English"
+        },
+        {
+            "language": "Hindi"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Traveling"
+        },
+        {
+            "name": "Photography"
+        }
+    ],
+    "publications": [],
+    "jobPreferences": {
+        "dateOfAvailability": "2023-10-01",
+        "previousSalary": "100,000 INR",
+        "expectedSalary": "140,000 INR"
+    },
+    "references": [
+        {
+            "name": "John Doe",
+            "companyName": "Google",
+            "position": "Team Lead",
+            "companyAddress": "456 Office Park",
+            "officeNumber": "+1234567890",
+            "mobileNumber": "+0987654321"
+        },
+        {
+            "name": "Jane Smith",
+            "companyName": "Freelancer",
+            "position": "Client Manager",
+            "companyAddress": "789 Remote Way",
+            "officeNumber": "+9876543210",
+            "mobileNumber": "+0123456789"
+        }
+    ]
+}
