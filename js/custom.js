@@ -4,7 +4,7 @@ return res.json();
 })
 .then((jsonData) => {
 
-    console.log(jsonData);
+    writeCV(jsonData);
 // Personal Info
 document.querySelector('.value.nationality').textContent = jsonData.basics.nationality;
 document.querySelector('.value.nric').textContent = jsonData.basics.nric;
@@ -112,3 +112,8 @@ refereesContainer.innerHTML += referenceHTML;
 
 
 });
+
+
+function writeCV(resp){
+console.log(resp);
+}

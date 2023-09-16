@@ -1,133 +1,135 @@
 {
     "basics": {
-        "name": "Aqeel Abbas",
-        "label": "Web Developer",
-        "email": "your.email@example.com",
-        "phone": "+1234567890",
-        "summary": "I am a web developer with a BSIT 4-year degree. I have worked at Google and as a freelancer, accumulating almost 10 years of experience as a software engineer and web developer. Currently, I am seeking a new opportunity with an expected salary of 140,000 INR.",
-        "age": 30,
-        "gender": "Male",
-        "dob": "1993-09-16",
-        "maritalStatus": "Single",
-        "linkedinProfile": "https://www.linkedin.com/in/yourlinkedinprofile",
-        "nationality": "Indian",
-        "nric": "123456789",
-        "location": {
-            "address": "123 Street Name",
-            "city": "City Name"
-        }
+      "name": "Aqeel Abbas",
+      "label": "Web Developer",
+      "email": "aqeel.abbas@example.com",
+      "phone": "+1-234-567-8901",
+      "summary": "I am a web developer with a BSIT degree and over 10 years of experience in software engineering and web development. I have previously worked at Google and as a freelancer, gaining extensive expertise in creating dynamic and user-friendly web applications. Currently seeking new opportunities to leverage my skills and contribute to innovative projects.",
+      "age": 30,
+      "gender": "Male",
+      "dob": "1993-09-16",
+      "maritalStatus": "Single",
+      "linkedinProfile": "https://www.linkedin.com/in/aqeel-abbas",
+      "nationality": "Indian",
+      "nric": "XXXXX-XXXXX-XX",
+      "location": {
+        "address": "123 Main Street",
+        "city": "New York"
+      }
     },
     "awards": [
-        {
-            "title": "Employee of the Month",
-            "summary": "Recognized for outstanding performance and dedication to excellence at Google."
-        }
+      {
+        "title": "Outstanding Web Developer Award",
+        "summary": "Recognized for exceptional performance in web development projects at Google."
+      }
     ],
     "skills": [
-        {
-            "name": "HTML",
-            "level": "Expert"
-        },
-        {
-            "name": "CSS",
-            "level": "Expert"
-        },
-        {
-            "name": "JavaScript",
-            "level": "Expert"
-        },
-        {
-            "name": "Python",
-            "level": "Intermediate"
-        },
-        {
-            "name": "PHP",
-            "level": "Intermediate"
-        }
+      {
+        "name": "HTML/CSS",
+        "level": "Expert"
+      },
+      {
+        "name": "JavaScript",
+        "level": "Advanced"
+      },
+      {
+        "name": "Python",
+        "level": "Intermediate"
+      },
+      {
+        "name": "React",
+        "level": "Advanced"
+      },
+      {
+        "name": "Node.js",
+        "level": "Advanced"
+      }
     ],
     "projects": [
-        {
-            "name": "Cook Booking Website (LookMyCook)",
-            "url": "https://www.lookmycook.com",
-            "description": "A web platform for users to discover and book cooking classes with professional chefs."
-        }
+      {
+        "name": "LookMyCook",
+        "url": "https://www.lookmycook.com",
+        "description": "A dynamic cook booking website that allows users to discover and share their favorite recipes."
+      }
     ],
     "work": [
-        {
-            "name": "Google",
-            "location": "Mountain View, CA",
-            "position": "Software Engineer",
-            "startDate": "2010-06-01",
-            "endDate": "2015-06-01",
-            "highlights": [
-                "Developed front-end features for Google Search.",
-                "Collaborated with cross-functional teams to optimize website performance.",
-                "Implemented user interface enhancements for various Google products."
-            ],
-            "summary": "Worked as a Software Engineer at Google, focusing on front-end development and performance optimization."
-        },
-        {
-            "name": "Freelancer",
-            "location": "Remote",
-            "position": "Web Developer",
-            "startDate": "2015-07-01",
-            "endDate": "2020-07-01",
-            "highlights": [
-                "Designed and developed custom websites for clients in various industries.",
-                "Collaborated with clients to define project requirements and deliverables.",
-                "Implemented responsive design to ensure compatibility across devices."
-            ],
-            "summary": "Worked as a freelance web developer, specializing in custom website design and development."
-        }
+      {
+        "name": "Google",
+        "location": "Mountain View, CA",
+        "position": "Software Engineer",
+        "startDate": "2015-01-01",
+        "endDate": "2020-12-31",
+        "highlights": [
+          "Led a team of developers in the successful implementation of several high-impact web projects.",
+          "Collaborated with product managers to define project requirements and deliverables.",
+          "Improved site performance through code optimization and efficient database design.",
+          "Mentored junior developers in best practices for web development."
+        ],
+        "summary": "Contributed to the development of cutting-edge web applications at one of the world's leading tech companies."
+      },
+      {
+        "name": "Freelancer",
+        "location": "Remote",
+        "position": "Web Developer",
+        "startDate": "2021-01-01",
+        "endDate": "2023-08-31",
+        "highlights": [
+          "Independently developed and deployed custom web solutions for diverse clients.",
+          "Collaborated with clients to understand project requirements and deliver high-quality results.",
+          "Utilized a range of technologies, including HTML/CSS, JavaScript, React, and Node.js, to create responsive and user-friendly websites."
+        ],
+        "summary": "Provided tailored web development services to clients across various industries."
+      }
     ],
     "education": [
-        {
-            "institution": "University Name",
-            "studyType": "Bachelor of Science in Information Technology",
-            "area": "Information Technology",
-            "startDate": "2007-09-01",
-            "endDate": "2011-06-01",
-            "score": "3.8/4.0"
-        }
+      {
+        "institution": "XYZ University",
+        "studyType": "Bachelor of Science in Information Technology (BSIT)",
+        "area": "Information Technology",
+        "startDate": "2010-09-01",
+        "endDate": "2014-05-31",
+        "score": "3.8/4.0"
+      }
     ],
     "languages": [
-        {
-            "language": "English"
-        },
-        {
-            "language": "Hindi"
-        }
+      {
+        "language": "English"
+      },
+      {
+        "language": "Spanish"
+      }
     ],
     "interests": [
-        {
-            "name": "Traveling"
-        },
-        {
-            "name": "Photography"
-        }
+      {
+        "name": "Traveling"
+      },
+      {
+        "name": "Photography"
+      }
     ],
-    "publications": [],
+    "publications": [
+      {
+        "name": "Advanced Techniques in Web Development",
+        "publisher": "Tech Publications",
+        "releaseDate": "2022-04-15",
+        "url": "https://www.example.com/advanced-techniques-web-dev",
+        "summary": "Explores cutting-edge methodologies and best practices for web development."
+      }
+    ],
     "jobPreferences": {
-        "dateOfAvailability": "2023-10-01",
-        "previousSalary": "100,000 INR",
-        "expectedSalary": "140,000 INR"
+      "dateOfAvailability": "2023-09-30",
+      "previousSalary": "100000 INR",
+      "expectedSalary": "140000 INR"
     },
-    "references": [
-        {
-            "name": "John Doe",
-            "companyName": "Google",
-            "position": "Team Lead",
-            "companyAddress": "456 Office Park",
-            "officeNumber": "+1234567890",
-            "mobileNumber": "+0987654321"
-        },
-        {
-            "name": "Jane Smith",
-            "companyName": "Freelancer",
-            "position": "Client Manager",
-            "companyAddress": "789 Remote Way",
-            "officeNumber": "+9876543210",
-            "mobileNumber": "+0123456789"
-        }
+    "referees": [
+      {
+        "name": "John Doe",
+        "companyName": "Google",
+        "position": "Senior Engineering Manager",
+        "companyAddress": "1600 Amphitheatre Parkway, Mountain View, CA",
+        "officeNumber": "+1-234-567-8901",
+        "mobileNumber": "+1-234-567-8902"
+      }
     ]
-}
+  }
+  
