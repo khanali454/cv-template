@@ -20,16 +20,20 @@ body{
 
 .cv-section {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
 }
 
 .cv-section .personal-info{
 width: calc(100% - 140px);
+min-height: 200px;
 display: flex;
 flex-direction: column;
 -ms-flex-direction: column;
 justify-content: space-between;
+padding-right: 20px;
 }
 
 .info{
@@ -40,9 +44,12 @@ justify-content: space-between;
     width: 50%;
 }
 
+
+
 .info-detail{
     display: flex;
     align-items: flex-start;
+    margin-top: 4px;
 }
 
 .info-detail .key{
@@ -52,24 +59,29 @@ justify-content: space-between;
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
-    padding: 2px 5px;
+    display: flex;
+    align-items: center;
 }
 
-.info-detail .key span{
-font-weight: normal;
+
+
+.info-detail .value{
+    margin-left: 5px;
+    color: #333;
 }
+
+
 
 .person-name{
-    padding: 5px 0;
-    font-size: 2rem;
+    margin-top: 10px;
+    font-size: 1.95rem;
 }
 
 
 
 .profile-container{
     width: 140px;
-    height: 190px;
-    border: 1px solid;
+    height: 200px;
 }
 
 
@@ -78,4 +90,5 @@ font-weight: normal;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: 2px solid #000;
 }
