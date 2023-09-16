@@ -156,3 +156,95 @@ margin-left: 5px;
     font-size: 16px;
     line-height: calc(16 * 1.2px);
 }
+
+/* education */
+.education{
+   border-bottom: none;
+}
+
+.education_degrees{
+    margin: 20px 0;
+    padding-left: 7px;
+}
+
+.ed_degree{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+
+.ed_detail .degree_{
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+}
+.degree_ .field_,.degree_ .cgpa{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.degree_ ._separator{
+    margin: 0 5px;
+}
+
+.ed_duration{
+    display: flex;
+    align-items: center;
+}
+
+.ed_duration .b_separtor{
+    margin: 0 5px;
+}
+
+/* skills */
+.skills_list{
+    margin: 15px 0;
+    margin-left: 30px;
+}
+
+.skills_list li{
+    margin: 3px 0;
+    font-size: 16px;
+    line-height: calc(16 * 1.2px);
+}
+
+/* job preferences */
+.preferences_list{
+    margin: 15px 0;
+    margin-left: 30px;
+}
+.preferences_list .preference_item{
+    margin: 3px 0;
+    font-size: 16px;
+    line-height: calc(16 * 1.2px);
+}
+
+/* referees */
+.referees{
+    border-bottom: none;
+}
+
+.refrees_list{
+display: flex;
+flex-wrap: wrap;
+margin: 15px 0;
+}
+
+.referee{
+    border-right: 2px solid #000;
+    padding: 0px 10px;
+    margin: 10px 0;
+}
+
+.referee:last-child{
+    border: none;
+}
+
+.referee .name{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+}
+
