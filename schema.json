@@ -437,7 +437,7 @@
         },
         "references": {
             "type": "array",
-            "description": "List of the referees to your work experience",
+            "description": "List of the referees to your work experience in above work fields",
             "additionalItems": false,
             "items": {
                 "type": "object",
