@@ -6,8 +6,9 @@
 }
 
 body{
-    background: #c5c5c5;
+    background: #cfcfcf;
 }
+
 /* cv template */
 .cv-template{
     width: 968px;
@@ -157,7 +158,7 @@ margin-left: 5px;
     line-height: calc(16 * 1.2px);
 }
 
-/* education */
+/* education , awards*/
 .education{
    border-bottom: none;
 }
@@ -167,7 +168,7 @@ margin-left: 5px;
     padding-left: 7px;
 }
 
-.ed_degree{
+.ed_degree,.award__{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -175,7 +176,7 @@ margin-left: 5px;
 }
 
 
-.ed_detail .degree_{
+.ed_detail .degree_, .award__detail .award_summary{
     display: flex;
     align-items: center;
     padding: 2px 0;
@@ -198,13 +199,47 @@ margin-left: 5px;
     margin: 0 5px;
 }
 
-/* skills */
-.skills_list{
+/* awards */
+.awards_section{
+    /* border-bottom: none; 
+     padding-bottom: 0; */
+}
+.awards{
+    margin: 20px 15px;
+}
+
+/* publications */
+.publications{
+    margin: 20px 15px;
+}
+
+.publication__detail{
+    margin: 20px 15px;
+}
+
+.publication__detail li{
+    margin-bottom: 20px;
+}
+
+.publication_title{
+    font-size: 17px;
+}
+
+.publication_info{
+    margin: 7px 15px;
+}
+.publication_info .field_{
+    margin-bottom: 3px;
+}
+
+
+/* skills , interests, languages*/
+.skills_list,.interests_list,.languages_list{
     margin: 15px 0;
     margin-left: 30px;
 }
 
-.skills_list li{
+.skills_list li,.interests_list li,.languages_list .language__{
     margin: 3px 0;
     font-size: 16px;
     line-height: calc(16 * 1.2px);
@@ -248,3 +283,25 @@ margin: 15px 0;
     font-weight: bold;
 }
 
+
+/* styles - printing media */
+@media print {
+    .no-print {
+      display: none;
+    }
+  
+    body {
+      background-color: #fff;
+    }
+  
+    @page {
+      size: A4;
+    }
+    a {
+      color: #000; 
+      text-decoration: none; 
+    }
+  
+   
+  }
+  
