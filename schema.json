@@ -160,9 +160,9 @@
                     "endDate": {
                         "$ref": "#/definitions/iso8601"
                     },
-                    "summary": {
+                    "duration": {
                         "type": "string",
-                        "description": "Give an overview of your responsibilities at the company"
+                        "description": "Duration of work experience in this company"
                     },
                     "highlights": {
                         "type": "array",
