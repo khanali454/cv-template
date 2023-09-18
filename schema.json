@@ -423,15 +423,15 @@
             "properties": {
                 "dateOfAvailability": {
                     "type": "string",
-                    "description": "Date of Availability e.g. 1 month"
+                    "description": "Date until you will be available must be greater than today e.g. 1 month"
                 },
                 "previousSalary": {
                     "type": "string",
-                    "description": "According to user currency e.g. 3000$ / Month"
+                    "description": "previous salary according to user currency e.g. 3000$ / Month"
                 },
                 "expectedSalary": {
                     "type": "string",
-                    "description": "e.g. 5000$ / Month"
+                    "description": "expected salary from this job e.g. 5000$ / Month"
                 }
             }
         },
