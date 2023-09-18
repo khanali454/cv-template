@@ -482,6 +482,10 @@
                         "type": "string",
                         "description": "e.g. Sales Dashboard"
                     },
+                     "url": {
+                        "type": "string",
+                        "description": "url to the project e.g. www.example.com/dashboard"
+                    },
                     "description": {
                         "type": "string",
                         "description": "Short summary of project. e.g. Improved sales data visualization."
