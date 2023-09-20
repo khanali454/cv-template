@@ -533,6 +533,5 @@
         }
     },
     "title": "CV Schema",
-    "total_words": "Count total words used for only this response",
     "type": "object"
 }
