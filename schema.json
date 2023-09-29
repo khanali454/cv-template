@@ -5,7 +5,7 @@
         "iso8601": {
             "type": "string",
             "description": "Date format should be M Y where M mean the name of the month and Y is the year e.g. August 2014 or September 2015",
-            "pattern": "\b(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May?|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)(?:19[7-9]\d|2\d{3})(?=\D|$)"
+            "pattern": "^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{4}$"
         }
     },
     "properties": {
